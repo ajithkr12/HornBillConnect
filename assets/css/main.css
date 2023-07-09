@@ -23,7 +23,7 @@
   --color-default-rgb: 33, 37, 41;
   --color-background: #ffffff;
   --color-background-rgb: 255, 255, 255;
-  --color-primary: #e84545;
+  --color-primary: #CB6E2C;
   --color-primary-rgb: 232, 69, 69;
   --color-secondary: #32353a;
   --color-secondary-rgb: 50, 53, 58;
@@ -173,7 +173,7 @@ section {
   --color-inverse: #ffffff;
   color: var(--color-default);
   background-color: var(--color-background);
-  padding: 15px 0;
+  padding: 15px 18px;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -555,6 +555,14 @@ section {
   }
 }
 
+.social-media-box a{
+  color: #ffffff;
+  margin-left: 30px;
+}
+.scrolled .social-media-box a{
+  color: #CB6E2C;
+  margin-left: 30px;
+}
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
