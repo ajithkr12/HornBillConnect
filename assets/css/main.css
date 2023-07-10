@@ -559,7 +559,16 @@ section {
   color: #ffffff;
   margin-left: 30px;
 }
+@media (max-width: 1199px) {
+  .social-media-box{
+    display: none;
+  }
+}
 .scrolled .social-media-box a{
+  color: #CB6E2C;
+  margin-left: 30px;
+}
+.social-media-box-about a{
   color: #CB6E2C;
   margin-left: 30px;
 }
@@ -704,7 +713,7 @@ section {
 }
 
 .footer .footer-about .logo img {
-  max-height: 40px;
+  max-height: 80px;
   margin-right: 6px;
 }
 
@@ -967,20 +976,24 @@ section {
 .about .content .read-more:hover i {
   margin-left: 10px;
 }
-.image-stack {
+.about .image-stack {
   display: grid;
   position: relative;
   grid-template-columns: repeat(12, 1fr);
 }
+.about .image-stack  img {
+  border: 6px solid #F4F4F4;
+  box-shadow: 0 15px 30px -10px #F4F4F4;
+}
 
- .image-stack .stack-back {
+.about .image-stack .stack-back {
   grid-column: 4/-1;
   grid-row: 1;
   width: 100%;
   z-index: 1;
 }
 
-.image-stack .stack-front {
+.about .image-stack .stack-front {
   grid-row: 1;
   grid-column: 1/span 8;
   margin-top: 20%;
@@ -3005,3 +3018,79 @@ section {
   font-size: 24px;
   color: #000000;
 }
+
+
+
+/* mission Section - about Page
+------------------------------*/
+.mission {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  position: relative;
+
+}
+
+.mission .mission-container-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.mission:before {
+  content: "";
+  /* background: rgba(var(--color-background-rgb), 0.5); */
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.mission .container {
+  position: relative;
+  z-index: 3;
+}
+.mission .content {
+  background-color: transparent;
+
+
+}
+
+.mission .content .mission-container{
+  padding: 18px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+
+.mission .content .mission-container img{
+  width: 80px;
+  margin-bottom: 16px;
+  
+}
+.mission .content .mission-container h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  padding: 10px 20px;
+  background: rgba(var(--color-primary-rgb), 0.05);
+  color: var(--color-primary);
+  border-radius: 7px;
+  display: inline-block;
+}
+
+.mission .content .mission-container h2 {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
