@@ -205,7 +205,7 @@ section {
   background: rgba(var(--color-primary-rgb), 0.85);
 }
 
-@media (max-width: 1210px) {
+@media (max-width: 1199px) {
   .header .logo {
     order: 1;
   }
@@ -265,7 +265,7 @@ section {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
-@media (min-width: 1210px) {
+@media (min-width: 1199px) {
   .navmenu {
     padding: 0;
   }
@@ -420,7 +420,7 @@ section {
 }
 
 /* Mobile Navigation */
-@media (max-width: 1210px) {
+@media (max-width: 1199px) {
   .mobile-nav-toggle {
     color: var(--color-nav);
     font-size: 28px;
@@ -550,8 +550,11 @@ section {
   color: #ffffff;
   margin-left: 30px;
 }
-@media (max-width: 1210px) {
+@media (max-width: 1199px) {
   .social-media-box{
+    display: none;
+  }
+  .social-media-box-about{
     display: none;
   }
 }
