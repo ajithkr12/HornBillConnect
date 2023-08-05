@@ -47,7 +47,7 @@
         <ul>
           <li><a href="index.html#hero" >Home</a></li>
           <li><a href="index.html#about" >About</a></li>
-          <li class="dropdown has-dropdown active"><a href="index.html#services"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown has-dropdown"><a href="index.html#services"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
             <ul class="dd-box-shadow">
               <li><a href="#">Event Management </a></li>
               <li class="dropdown has-dropdown"><a href="#"><span>Surprise Gift</span> <i class="bi bi-chevron-down"></i></a>
@@ -95,7 +95,7 @@
             <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
               <div class="col-xl-10">
                 <div class="text-center">
-                  <h1>Event Management</h1>
+                  <h1>Event Regiter form</h1>
                   <!-- <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
                 </div>
               </div>
@@ -104,68 +104,98 @@
     
         </section><!-- End Call-to-action Section -->
 
-        <!-- start event-management Section -->
-    <section id="event-management" class="event-management">
+ 
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row align-items-xl-center gy-5">
-
-          <div class="col-xl-5 content">
-            <h2>Event Management</h2>
-            <p>The most beautiful events are also the smartest event. The initial concept, conversations and design
-              works that realize your vision and so intrinsically linked. You will get your own customized event. And
-              when we layer in the flawless execution that has become the very essence of who we are, the result is
-              simply spectacular.</p>
-            <a href="event-register-form.html" class="btn btn-get-started align-self-start">Get Started</a>
-          </div>
-
-            <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
-              <div class="image-stack">
-                <img src="assets/img/features-light-1.jpg" alt="" class="stack-front" >
-                <img src="assets/img/features-light-2.jpg" alt="" class="stack-back" >
-              </div>
-            </div>
-
-        </div>
-      </div>
-
-    </section><!-- End About Section -->
-
-        <!-- start event-management-list Section -->
-        <section id="event-management-list" class="event-management-list">
+        <!-- start event-register-form Section -->
+        <section id="event-management-register" class="event-management-register">
           <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row align-items-center gy-3">   
-              <div class="col-xl-12 col-lg-12 content">
-                <div class="event-management-list-container">
-                  <h2>SERVICES AT </h2>
-                  <h4>Ipsa sint sit. Quis ducimus tempore dolores impedit et dolor cumque alias maxime. Enim reiciendis minus et rerum hic non. </h4>  
-                </div>
-              </div>
+              <div class="col-lg-12">
+                <form action="forms/contact.php" method="post" class="php-form" data-aos="fade-up" data-aos-delay="200">
+                  <div class="row gy-4">
+    
+                    <div class="col-md-4">
+                      <input type="text" name="surpriseTo" class="form-control" placeholder="Surprise To" required>
+                    </div>
 
-              <div class="col-lg-6 d-flex justify-content-center flex-column align-items-center" data-aos="fade-up">
-                <ul>
-                  <li><i class="bi bi-chevron-double-right me-3"></i> <span>Corporate Events</span></li>
-                  <li><i class="bi bi-chevron-double-right me-3"></i><span> Product Launch and Promo</span></li>
-                  <li><i class="bi bi-chevron-double-right me-3"></i> <span>Entertainment shows</span>.</li>
-                  <li><i class="bi bi-chevron-double-right me-3"></i><span> Exhibitions</span></li>
-                  <li><i class="bi bi-chevron-double-right me-3"></i> <span> Channel programs</span>.</li>
-                </ul>
-              </div>
+                    <div class="col-md-4">
+                      <select name="category" id="category" class="minimal" placeholder="Category Type" required>
+                        <option value="volvo">category 1</option>
+                        <option value="saab">category 2</option>
+                        <option value="opel">category 3</option>
+                        <option value="audi">category 4</option>
+                      </select>
+                    </div>
 
-              <div class="col-lg-6 d-flex justify-content-center flex-column align-items-center" data-aos="fade-up">
-                <ul>
-                  <li><i class="bi bi-chevron-double-right me-3"></i> <span>Hospitality Management</span></li>
-                  <li><i class="bi bi-chevron-double-right me-3"></i><span> Wedding Events</span></li>
-                  <li><i class="bi bi-chevron-double-right me-3"></i> <span>Wedding Planner</span>.</li>
-                  <li><i class="bi bi-chevron-double-right me-3"></i><span> Destination Wedding</span></li>
-                  <li><i class="bi bi-chevron-double-right me-3"></i> <span> Personally curated events (Bespoke Events)</span>.</li>
-                </ul>
-              </div>
+                    <div class="col-md-4">
+                      <select name="package" id="package" class="minimal" placeholder="Package Type" required>
+                        <option value="volvo">package 1</option>
+                        <option value="saab">package 2</option>
+                        <option value="opel">package 3</option>
+                        <option value="audi">package 4</option>
+                      </select>
+                    </div>
 
+                    <div class="col-md-4">
+                      <input type="date" id="eventDate" name="eventDate" class="form-control">
+                    </div>
+
+                    <div class="col-md-4">
+                      <input type="time" id="eventTime" name="eventTime" class="form-control" >
+                    </div>
+
+                    <div class="col-md-4">
+                      <input type="text" class="form-control" name="name" placeholder="Name" required>
+                    </div>
+
+                    <div class="col-md-4">
+                      <select name="gender" id="gender" class="minimal" placeholder="Gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-4">
+                      <input type="number" class="form-control" name="age" placeholder="Age" min="1" max="100" required>
+                    </div>
+
+                    <div class="col-md-4">
+                      <input type="tel" class="form-control" name="mobileNumber" placeholder="Mobile Number" required>
+                    </div>
+
+                    <!-- <div class="col-md-6 ">
+                      <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                    </div> -->
+                    
+                    <div class="col-md-6">
+                      <textarea class="form-control" name="address" rows="6" placeholder="Address" required></textarea>
+                    </div>
+
+                    <div class="col-md-6">
+                      <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                    </div>
+
+
+                    <!-- hhhhhhhhhhhhhh -->
+    
+
+    
+                    <div class="col-md-12 text-center">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div>
+    
+                      <button type="submit">Register</button>
+                    </div>
+    
+                  </div>
+                </form>
+              </div><!-- End Contact Form -->
             </div>
           </div>
     
-        </section><!-- End mission Section -->
+        </section>
+        <!-- End event-register-form Section -->
 
 
   </main>

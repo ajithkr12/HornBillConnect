@@ -3320,3 +3320,197 @@ section {
 }
 
 
+/* -----------------------Event Register Form ------------------*/
+
+.event-management-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  position: relative;
+  padding: 4% 0% 4% 0%;
+
+}
+
+
+.event-management-register .php-form {
+  background: var(--color-box-background);
+  padding: 30px;
+  height: 100%;
+}
+
+.event-management-register .php-form .error-message {
+  display: none;
+  background: #df1529;
+  color: #ffffff;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.event-management-register .php-form .sent-message {
+  display: none;
+  color: #ffffff;
+  background: #059652;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.event-management-register .php-form .loading {
+  display: none;
+  background: var(--color-background);
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+}
+
+.event-management-register .php-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid var(--color-primary);
+  border-top-color: var(--color-background);
+  animation: animate-loading 1s linear infinite;
+}
+
+.event-management-register .php-form input[type=text],
+.event-management-register .php-form input[type=email],
+.event-management-register .php-form input[type=date],
+.event-management-register .php-form input[type=time],
+.event-management-register .php-form input[type=number],
+.event-management-register .php-form input[type=tel],
+
+.event-management-register .php-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--color-default);
+  background-color: rgba(var(--color-background-rgb), 0.5);
+  border-color: rgba(var(--color-default-rgb), 0.2);
+}
+
+.event-management-register .php-form input[type=text]:focus,
+.event-management-register .php-form input[type=email]:focus,
+.event-management-register .php-form input[type=date]:focus,
+.event-management-register .php-form input[type=time]:focus,
+.event-management-register .php-form input[type=number]:focus,
+.event-management-register .php-form input[type=tel]:focus,
+
+.event-management-register .php-form textarea:focus {
+  border-color: var(--color-primary);
+}
+
+.event-management-register .php-form input[type=text]::-moz-placeholder,
+.event-management-register .php-form input[type=email]::-moz-placeholder,
+.event-management-register .php-form input[type=date]::-moz-placeholder,
+.event-management-register .php-form input[type=time]::-moz-placeholder,
+.event-management-register .php-form input[type=number]::-moz-placeholder,
+.event-management-register .php-form input[type=tel]::-moz-placeholder,
+
+.event-management-register .php-form textarea::-moz-placeholder {
+  color: rgba(var(--color-default-rgb), 0.3);
+}
+
+.event-management-register .php-form input[type=text]::placeholder,
+.event-management-register .php-form input[type=email]::placeholder,
+.event-management-register .php-form input[type=date]::placeholder,
+.event-management-register .php-form input[type=time]::placeholder,
+.event-management-register .php-form input[type=number]::placeholder,
+.event-management-register .php-form input[type=tel]::placeholder,
+
+.event-management-register .php-form textarea::placeholder {
+  color: rgba(var(--color-default-rgb), 0.3);
+}
+
+.event-management-register .php-form button[type=submit] {
+  background: var(--color-primary);
+  color: var(--color-inverse);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.event-management-register .php-form button[type=submit]:hover {
+  background: rgba(var(--color-primary-rgb), 0.8);
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+select {
+
+  /* styling */
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--color-default);
+  background-color: rgba(var(--color-background-rgb), 0.5);
+  border-color: rgba(var(--color-default-rgb), 0.2);
+
+  /* reset */
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+ select.minimal {
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+select.minimal:focus {
+  background-image:
+    linear-gradient(45deg, green 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, green 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: var(--color-primary);
+  outline: 0;
+}
+
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
